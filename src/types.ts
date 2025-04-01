@@ -1,6 +1,6 @@
-export type TValue = 'X' | 'O' | null;
+export type TPlayer = 'X' | 'O' | null;
 
-export type boardState = TValue[];
+export type boardState = TPlayer[];
 
 export interface PlayerNames {
   player1: string,
@@ -8,6 +8,6 @@ export interface PlayerNames {
 }
 
 export interface IWinner {
-  sign: TValue,
+  sign: TPlayer,
   set: number[]
 }

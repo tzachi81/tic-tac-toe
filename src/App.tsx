@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import { Board } from "./components/board/Board";
 import { Controls } from "./components/controls/Controls";
-import { TValue, PlayerNames, boardState, IWinner } from "./types";
+import { PlayerNames, boardState, IWinner } from "./types";
 
 const intialBoard: boardState = Array(9).fill(null);
 const intialNames: PlayerNames = { player1: "player1", player2: "player2" };
@@ -28,7 +28,7 @@ function App() {
 
   //check board function
 
-  // const [winner, setWinner] = useState<TValue>(null);
+  // const [winner, setWinner] = useState<TPlayer>(null);
   const [winnerObj, setWinnerObj] = useState<IWinner | null>(null);
 
   useEffect(() => {
