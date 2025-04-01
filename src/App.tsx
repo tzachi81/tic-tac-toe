@@ -38,6 +38,7 @@ function App() {
   }, [board]);
 
   useEffect(() => {
+    if (!names.player1 && !names.player2) setNames(intialNames);
     localStorage.setItem("board", JSON.stringify(board));
     localStorage.setItem("isXNext", JSON.stringify(isXNext));
     localStorage.setItem("names", JSON.stringify(names));
